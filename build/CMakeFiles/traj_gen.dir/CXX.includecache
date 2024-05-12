@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/veh_model.h
+iostream
+-
+cmath
+-
+vector
+-
+
+/home/lxx/tools/traj_generator/src/main.cc
+veh_model.h
+/home/lxx/tools/traj_generator/src/veh_model.h
+
+/home/lxx/tools/traj_generator/src/veh_model.cc
+veh_model.h
+/home/lxx/tools/traj_generator/src/veh_model.h
+

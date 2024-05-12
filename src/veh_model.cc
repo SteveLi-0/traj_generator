@@ -1,8 +1,8 @@
 #include "veh_model.h"
 
 Vehicle::Vehicle(double init_x, double init_y, double init_psi, 
-                    double init_v = 0, double init_a = 0, double init_beta = 0, 
-                    double init_lf = 1.25, double init_lr = 1.25)
+    double init_v, double init_a, double init_beta,
+    double init_lf, double init_lr)
         : l(init_lf + init_lr), lf(init_lf), lr(init_lr),
             x(init_x), y(init_y), psi(init_psi), beta(init_beta),
             curvature(0.0), v(init_v), a(init_a), s(0.0), 
@@ -13,7 +13,7 @@ void Vehicle::setL(double val)
     l = val;
 }
 
-void Vehicle::updateTrajectory(double longitudinal_acceleration, double front_wheel_angle, double dt = 0.01) 
+void Vehicle::updateTrajectory(double longitudinal_acceleration, double front_wheel_angle, double dt) 
 {
     // Update acceleration and front wheel angle
     a = longitudinal_acceleration;
