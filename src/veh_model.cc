@@ -33,6 +33,13 @@ void Vehicle::updateTrajectory(double longitudinal_acceleration, double front_wh
     x += v * std::cos(psi) / std::cos(beta);
     y += v * std::sin(psi) / std::cos(beta);
     // theta
-    theta = beta + 
+    theta = beta + psi;
+}
 
+void Vehicle::printState() 
+{
+    std::cout << "Vehicle State:" << std::endl;
+    std::cout << "x: " << x << ", y: " << y << ", psi: " << psi << std::endl;
+    std::cout << "Curvature: " << curvature << ", Velocity: " << v << ", Acceleration: " << a << std::endl;
+    std::cout << "Accumulated Distance: " << s << ", Front Wheel Angle: " << delta << ", Time: " << t << std::endl;
 }

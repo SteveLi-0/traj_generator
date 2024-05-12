@@ -38,16 +38,3 @@ public:
         std::cout << "Accumulated Distance: " << s << ", Front Wheel Angle: " << delta << ", Time: " << t << std::endl;
     }
 };
-
-int main() {
-    // Create a vehicle instance
-    Vehicle vehicle(0.0, 0.0, 0.0);
-
-    // Update trajectory with longitudinal acceleration of 2 m/s^2 and front wheel angle of 0.1 radians
-    vehicle.updateTrajectory(2.0, 0.1);
-
-    // Print vehicle state
-    vehicle.printState();
-
-    return 0;
-}
