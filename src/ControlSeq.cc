@@ -51,11 +51,12 @@ void ControlSeq::setDeltaf(double df, int index)
     }
     else if (index == 2)
     {
+        double t = 0.0; 
         for (int i = 0; i < n_; ++i)
         {
-            double t = i / n_ * 2 * M_PI;
+
             delta_f_[i] = df * sin(t);
-            
+            t += M_PI / 128.0;
         }
     }
 }
