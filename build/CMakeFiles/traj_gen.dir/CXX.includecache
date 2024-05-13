@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ControlSeq.h
+iostream
+-
+cmath
+-
+vector
+-
+
+/home/lxx/tools/traj_generator/src/ControlSeq.cc
+ControlSeq.h
+/home/lxx/tools/traj_generator/src/ControlSeq.h
+
