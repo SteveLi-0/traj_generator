@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/traj_gen.dir/src/ControlSeq.cc.o CMakeFiles/traj_gen.dir/src/main.cc.o CMakeFiles/traj_gen.dir/src/veh_model.cc.o  -o ../bin/traj_gen  -lpython3.8 

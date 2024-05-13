@@ -1,3 +1,0 @@
-/home/lxx/tools/traj_generator/build/CMakeFiles/rebuild_cache.dir
-/home/lxx/tools/traj_generator/build/CMakeFiles/edit_cache.dir
-/home/lxx/tools/traj_generator/build/CMakeFiles/traj_gen.dir
