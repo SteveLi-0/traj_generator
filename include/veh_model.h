@@ -35,4 +35,27 @@ public:
     void updateTrajectory(double longitudinal_acceleration, double front_wheel_angle, double dt = 0.1);
     // Method to print vehicle state
     void printState();
+
+    // get x
+    double getX() const;
+    // get y
+    double getY() const;
+    // get psi
+    double getPsi() const;
+    // get theta
+    double getTheta() const;
+    // get beta
+    double getBeta() const;
+    // get curvature
+    double getCurve() const;
+    // get v
+    double getV() const;
+    // get a
+    double getAcc() const;
+    // get s
+    double getS() const;
+    // get delta
+    double getDelta() const;
+    // get t
+    double getT() const;
 };

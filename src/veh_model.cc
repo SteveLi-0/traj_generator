@@ -43,3 +43,61 @@ void Vehicle::printState()
     std::cout << "Curvature: " << curvature << ", Velocity: " << v << ", Acceleration: " << a << std::endl;
     std::cout << "Accumulated Distance: " << s << ", Front Wheel Angle: " << delta << ", Time: " << t << std::endl;
 }
+
+
+// get
+// get x
+double Vehicle::getX() const
+{
+    return x;
+}
+// get y
+double Vehicle::getY() const
+{
+    return y;
+}
+// get psi
+double Vehicle::getPsi() const
+{
+    return psi;
+}
+// get theta
+double Vehicle::getTheta() const
+{
+    return theta;
+}
+// get beta
+double Vehicle::getBeta() const
+{
+    return beta;
+}
+// get curvature
+double Vehicle::getCurve() const
+{
+    return curvature;
+}
+// get v
+double Vehicle::getV() const
+{
+    return v;
+}
+// get a
+double Vehicle::getAcc() const
+{
+    return a;
+}
+// get s
+double Vehicle::getS() const
+{
+    return s;
+}
+// get delta
+double Vehicle::getDelta() const
+{
+    return delta;
+}
+// get t
+double Vehicle::getT() const
+{
+    return t;
+}
